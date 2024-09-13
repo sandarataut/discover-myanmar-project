@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "expo": "~51.0.28",
     "expo-font": "^12.0.10",
     "expo-router": "^3.5.23",
@@ -16,7 +17,9 @@
     "expo-status-bar": "~1.12.1",
     "firebase": "^10.13.1",
     "react": "18.2.0",
-    "react-native": "0.74.5"
+    "react-native": "0.74.5",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss": "^3.4.11"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

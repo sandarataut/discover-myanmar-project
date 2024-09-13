@@ -7,7 +7,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Optionally import the services that you want to use
-import { getReactNativePersistence, initializeAuth } from "firebase/auth";
+import { initializeAuth } from "firebase/auth";
 // import {...} from "firebase/database";
 import { getFirestore } from "firebase/firestore";
 // import {...} from "firebase/functions";
@@ -36,7 +36,7 @@ const analytics = getAnalytics(app);
 
 // initialize auth; only for native platforms (Android and iOS)
 const auth = initializeAuth(app, {
-  persistence: getReactNativePersistence(AsyncStorage)
+  //   persistence: getReactNativePersistence(AsyncStorage)
 });
 
 // const database = getDatabase(app);
