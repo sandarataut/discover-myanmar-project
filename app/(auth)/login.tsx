@@ -103,11 +103,11 @@ export default function LoginView() {
           SIGN IN
         </Button>
 
-        {/* <Link
+        <Link
           href="/(auth)/forgot-password"
           className="text-primary mb-4 text-base text-center font-Poppins500 ">
           Forgot password?
-        </Link> */}
+        </Link>
         <Link
           href="/(auth)/register"
           className="text-default text-base font-Poppins400 text-center mt-3">

@@ -31,17 +31,17 @@ Use the checkboxes below to track the completion of tasks.
   - [x] Setup Firebase
   - [x] ESLint and Prettier
 - [] MSD-10 Splash & Onboarding Screens
-  - [] Splash Screen
-  - [] Onboarding - Stepper
-  - [] Onboarding - Get started
-  - [] Onboarding - Just three Question
-  - [] Onboarding - Three Question
-  - [] Onboarding - Request Notification Permission
-- [] MSD-11 Loading Screen
-- [] MSD-12 Login Screen
-- [] MSD-13 Forget Password Screen
-- [] MSD-14 Registeration Screen
-- [] MSD-15 Registeration Success Screen
+  - [x] Splash Screen
+  - [x] Onboarding - Stepper
+  - [x] Onboarding - Get started
+  - [x] Onboarding - Just three Question
+  - [x] Onboarding - Three Question
+  - [x] Onboarding - Request Notification Permission
+- [] MSD-11 Loading Screen - No need
+- [x] MSD-12 Login Screen
+- [x] MSD-13 Forget Password Screen
+- [x] MSD-14 Registeration Screen
+- [x] MSD-15 Registeration Success Screen
 - [] MSD-16 Home Screen
   - [] App Bottom Tabs
 - [] MSD-20 Notifications Screen ( UI + \_ )
