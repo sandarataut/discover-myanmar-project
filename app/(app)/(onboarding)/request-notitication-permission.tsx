@@ -36,7 +36,7 @@ export default function RequestNotificationPermissionPage() {
           We would like to send you Notifications
         </Text>
         <Text className="text-base text-center">
-          {`Nodficktions may include reminders and icon badges.\nThese can be configured in\nSettings.`}
+          {`Notifications may include reminders and icon badges.\nThese can be configured in\nSettings.`}
         </Text>
         <View className="w-full">
           <Button
