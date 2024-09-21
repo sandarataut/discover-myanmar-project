@@ -17,12 +17,16 @@ type FormData = {
 };
 
 const schema = yup.object().shape({
-  email: yup.string().email().required().label("Email"),
+  email: yup
+    .string()
+    .email()
+    .required("Please enter your email address")
+    .label("Email"),
   password: yup
     .string()
     .label("Password")
     .min(8)
-    .required()
+    .required("Please enter your password")
     .matches(/[0-9]/, getCharacterValidationError("digit"))
     .matches(/[a-z]/, getCharacterValidationError("lowercase"))
     .matches(/[A-Z]/, getCharacterValidationError("uppercase"))

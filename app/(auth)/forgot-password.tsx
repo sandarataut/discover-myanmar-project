@@ -13,7 +13,11 @@ type FormData = {
 };
 
 const schema = yup.object().shape({
-  email: yup.string().email().required("Email is required").label("Email")
+  email: yup
+    .string()
+    .email()
+    .required("Please enter your email address")
+    .label("Email")
 });
 
 export default function ForgotPasswordView() {
