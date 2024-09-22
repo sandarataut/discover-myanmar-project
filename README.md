@@ -42,11 +42,11 @@ Use the checkboxes below to track the completion of tasks.
 - [x] MSD-13 Forget Password Screen
 - [x] MSD-14 Registeration Screen
 - [x] MSD-15 Registeration Success Screen
-- [] MSD-16 Home Screen
-  - [] App Bottom Tabs
+- [x] MSD-16 Home Screen
+  - [x] App Bottom Tabs
 - [] MSD-20 Notifications Screen ( UI + \_ )
-- [] MSD-21 User Profile Screen
-- [] MSD-22 User Profile Update Screen
+- [x] MSD-21 User Profile Screen
+- [x] MSD-22 User Profile Update Screen
 - [] MSD-17 Myanmar Fact Screen
 - [] MSD-18 Myanmar Characters Screens
 - [] MSD-19 Myanmar Numbers Screen
