@@ -15,7 +15,7 @@ export default function AppLayout() {
     <Stack
       screenOptions={{
         headerShown: true,
-        animation: "fade",
+        animation: "slide_from_right",
         headerShadowVisible: false,
         headerTitleAlign: "center",
         headerTitle: "",

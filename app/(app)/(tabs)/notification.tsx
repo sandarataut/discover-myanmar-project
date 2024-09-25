@@ -1,11 +1,10 @@
 import Loading from "components/common/Loading";
 import { Text } from "components/ui";
-import React from "react";
-import { FlatList, View } from "react-native";
+import React, { useEffect } from "react";
+import { FlatList, ListRenderItem, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import useNotificationViewModel, {
-  INotification
-} from "viewmodel/NotificationViewModel";
+import useNotificationViewModel from "viewmodel/NotificationViewModel";
+import { Notification as INotification } from "types";
 
 // const data = [
 //   "You got new badge!",
@@ -13,8 +12,18 @@ import useNotificationViewModel, {
 //   "You finished level 1 in Myanmar Numbers."
 // ];
 export default function NotificationView() {
-  const { notifications, loading } = useNotificationViewModel();
-  const renderItem = ({ item }: { item: INotification }) => (
+  const { notifications, loading, getUnreadNotifications } =
+    useNotificationViewModel();
+
+  useEffect(() => {
+    getUnreadNotifications();
+  }, [getUnreadNotifications]);
+
+  const renderItem: ListRenderItem<INotification> = ({
+    item
+  }: {
+    item: INotification;
+  }) => (
     <View className="rounded-md py-5 px-6 bg-secondary">
       <Text className="text-base">{item?.message}</Text>
     </View>

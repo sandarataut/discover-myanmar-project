@@ -59,7 +59,7 @@ export default function RootLayout() {
         header: ({ route }) => (
           <Header
             setting={route.name === "profile"}
-            style={{ marginTop: insets?.top }}
+            style={{ paddingTop: insets?.top }}
           />
         ),
         tabBarStyle: {

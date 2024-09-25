@@ -77,7 +77,11 @@ const DateInput = ({
             <DateTimePickerModal
               disabled={disabled}
               isVisible={show}
-              date={value ? dayjs().toDate() : undefined}
+              date={
+                value
+                  ? dayjs(value).toDate()
+                  : dayjs().set("years", 2000).toDate()
+              }
               mode="date"
               display="inline"
               onConfirm={onConfirmIOS}

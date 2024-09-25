@@ -7,7 +7,7 @@ export default function RNTextInput({ className, ...props }: Props) {
   return (
     <TextInput
       cursorColor={colors.primary}
-      className="bg-[#dfe3e7] py-2 px-2.5 rounded-lg"
+      className="bg-[#dfe3e7] py-3 px-2.5 rounded-lg"
       style={{
         includeFontPadding: false,
         fontSize: 14,

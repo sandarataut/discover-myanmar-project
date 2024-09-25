@@ -13,8 +13,12 @@ const useLoginViewModel = () => {
       await signInWithEmailAndPassword(auth, email, password);
       router.replace("/");
     } catch (error: any) {
-      console.error("Error login user:", error);
-      setErrorMessage(error?.message);
+      console.error("Error login user:", error?.code);
+      if (error?.code === "auth/invalid-credential") {
+        setErrorMessage("The email and password are invalid.");
+      } else {
+        setErrorMessage(error?.message);
+      }
       throw error;
     } finally {
       setLoading(false);

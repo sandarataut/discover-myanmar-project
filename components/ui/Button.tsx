@@ -22,7 +22,7 @@ const baseStyles =
 
 const getButtonVariantStyles = (variant: variantType, disabled: boolean) => {
   const styles = {
-    contained: disabled ? "bg-[#21212108]" : "bg-primary",
+    contained: disabled ? "!bg-[#21212108]" : "bg-primary",
     outlined: "border-primary border-[2px]"
   };
   return styles?.[variant] || "";
@@ -62,7 +62,7 @@ const Button: FC<IButton> = forwardRef<TouchableOpacity, IButton>(
       getTextVariantStyles(variant),
       titleClassName,
       {
-        "text-disabled": disabled
+        "text-gray-500": disabled
       }
     );
 
