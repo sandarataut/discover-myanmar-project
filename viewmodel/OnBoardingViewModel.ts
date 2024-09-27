@@ -23,7 +23,7 @@ const getUserPreferences: IQuestion[] = [
     ]
   },
   {
-    id: "how_did_you_hear_about_us??",
+    id: "how_did_you_hear_about_us?",
     title: "How did you hear about us?",
     options: [
       "App Store",

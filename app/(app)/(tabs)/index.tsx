@@ -25,6 +25,13 @@ export default function Home() {
           className="!h-20 bg-secondary">
           Myanmar Numbers
         </Button>
+
+        {/* admin view */}
+        {/* <Button
+          onPress={() => router.push("/lessons/create-lessons")}
+          className="!h-20 bg-secondary">
+          Update Lessons And Badges
+        </Button> */}
       </View>
     </SafeAreaView>
   );

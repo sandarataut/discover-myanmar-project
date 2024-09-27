@@ -71,7 +71,7 @@ function BadgeView() {
   }
   return (
     <View>
-      <Text className="text-lg text-primary">Badges</Text>
+      <Text className="text-primary font-Poppins700 text-base">Badges</Text>
       <View className="flex-row gap-2 mt-2">
         {badges?.map((b: any, i) => {
           return b?.id === "numbers_newbie" ? (

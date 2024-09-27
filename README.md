@@ -15,6 +15,8 @@ git clone git@github.com:sandarataut/discover-myanmar-project.git
 cd discover-mm-project
 ```
 
+and install the required dependencies and run the project:
+
 ```bash
 yarn install
 yarn start
@@ -27,6 +29,11 @@ yarn start
 - [How can I trace letters?](https://github.com/Shopify/react-native-skia/discussions/2184)
 - [performance drawing/painting using skia ](https://github.com/Shopify/react-native-skia/discussions/1989)
 - [How To Use MVVM in React Using Hooks and TypeScript](https://www.perssondennis.com/articles/how-to-use-mvvm-in-react-using-hooks-and-typescript#user-content-mvvm-overview)
+- [React Native Documentation] (https://reactnative.dev/docs/getting-started)
+- [Integrating Firebase with React Native] (https://medium.com/@abhishekgarg.dev/integrating-firebase-with-react-native-075f0aca64b8)
+- [Add Firebase to your JavaScript Project] (https://firebase.google.com/docs/web/setup)
+- [Cloud Firestore Documentation] (https://firebase.google.com/docs/firestore)
+- [Firebase Authentication Documentation] (https://firebase.google.com/docs/auth)
 
 ## Dependencies
 
@@ -77,12 +84,11 @@ Use the checkboxes below to track the completion of tasks.
   - [x] Config Nativewind(style), Expo router, Fonts, Colors and necessary libs
   - [x] Setup Firebase
   - [x] ESLint and Prettier
-- [] MSD-10 Splash & Onboarding Screens
+- [x] MSD-10 Splash & Onboarding Screens
   - [x] Splash Screen
   - [x] Onboarding - Stepper
   - [x] Onboarding - Get started
-  - [x] Onboarding - Just three Question
-  - [x] Onboarding - Three Question
+  - [x] Onboarding - Three Questions
   - [x] Onboarding - Request Notification Permission
 - [] MSD-11 Loading Screen - No need
 - [x] MSD-12 Login Screen
@@ -94,8 +100,8 @@ Use the checkboxes below to track the completion of tasks.
 - [x] MSD-20 Notifications Screen ( UI + \_ )
 - [x] MSD-21 User Profile Screen
 - [x] MSD-22 User Profile Update Screen
-- [] MSD-17 Myanmar Fact Screen
+- [x] MSD-17 Myanmar Fact Screen
 - [] MSD-18 Myanmar Characters Screens
 - [] MSD-19 Myanmar Numbers Screen
-- [] MSD-23 Leaderboard Screen
+- [x] MSD-23 Leaderboard Screen
 - [] MSD-24 Achievement / Progress Screens
