@@ -20,10 +20,10 @@ export default function MyanmarNumberView() {
   const onPressLesson = useCallback(
     (id: string, title: string, points: string) => {
       return () => {
-        // router.push({
-        //   pathname: "/(app)/lessons/[id]",
-        //   params: { id, title, points, type: "number" }
-        // });
+        router.push({
+          pathname: "/(app)/lessons/[id]",
+          params: { id, title, points, type: "number" }
+        });
       };
     },
     []

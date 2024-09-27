@@ -20,10 +20,10 @@ export default function MyanmarCharacterView() {
   const onPressLesson = useCallback(
     (id: string, title: string, points: string) => {
       return () => {
-        // router.push({
-        //   pathname: "/(app)/lessons/[id]",
-        //   params: { id, title, points, type: "character" }
-        // });
+        router.push({
+          pathname: "/(app)/lessons/[id]",
+          params: { id, title, points, type: "character" }
+        });
       };
     },
     []
