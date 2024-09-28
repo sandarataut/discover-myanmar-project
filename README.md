@@ -2,20 +2,24 @@
 
 A Cultural Journey Through Interactive Technology
 
+Explore Myanmar's fascinating cultural and historical heritage with the "Discover Myanmar" mobile app. This interactive tool provides a distinctive learning opportunity, enabling users to delve into Myanmar's language, history, and culture through engaging modules.
+
 ## How to Run the Project
 
 Follow these steps to set up and run the project locally on your machine:
 
 ### 1. Clone the Repository
 
-First, clone the project repository to your local machine using Git:
+First, clone the Discover Myanmar project repository to your local machine using Git. Open your terminal and run the following commands:
 
 ```bash
 git clone git@github.com:sandarataut/discover-myanmar-project.git
 cd discover-mm-project
 ```
 
-and install the required dependencies and run the project:
+### 2. Install Dependencies and Run the Project
+
+After navigating into the project directory, install all required dependencies using Yarn:
 
 ```bash
 yarn install
@@ -101,7 +105,7 @@ Use the checkboxes below to track the completion of tasks.
 - [x] MSD-21 User Profile Screen
 - [x] MSD-22 User Profile Update Screen
 - [x] MSD-17 Myanmar Fact Screen
-- [] MSD-18 Myanmar Characters Screens
-- [] MSD-19 Myanmar Numbers Screen
+- [x] MSD-18 Myanmar Characters Screens
+- [x] MSD-19 Myanmar Numbers Screen
 - [x] MSD-23 Leaderboard Screen
 - [] MSD-24 Achievement / Progress Screens
