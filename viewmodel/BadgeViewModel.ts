@@ -1,14 +1,24 @@
-import { arrayUnion, doc, getDoc, updateDoc } from "firebase/firestore";
+import {
+  arrayUnion,
+  collection,
+  doc,
+  getDoc,
+  getDocs,
+  query,
+  updateDoc
+} from "firebase/firestore";
 import { useAtomValue } from "jotai";
 import { useState } from "react";
 import { db } from "services/firebaseConfig";
 import userAtom from "stores/userAtom";
+import { Badge } from "types";
 
 const useBadgeViewModel = () => {
   const currentUser = useAtomValue(userAtom);
   const userId = currentUser?.uid as string;
   const [loading, setLoading] = useState(false);
-  const [badges, setBadges] = useState([]);
+  const [badges, setBadges] = useState<Badge[]>([]);
+  const [userBadgeIds, setUserBadgeIds] = useState<string[]>([]);
 
   async function giveBadgeToUser(lessonId: string) {
     const userRef = doc(db, "users", userId);
@@ -41,7 +51,7 @@ const useBadgeViewModel = () => {
     }
   }
 
-  async function displayUserBadges() {
+  async function fetchUserBadges() {
     setLoading(true);
     try {
       const userRef = doc(db, "users", userId);
@@ -50,23 +60,7 @@ const useBadgeViewModel = () => {
       if (userDoc.exists()) {
         const userData = userDoc.data();
         const badges = userData.badges || [];
-
-        const result = [];
-        // Display badges by fetching from badges collection
-        for (const badgeId of badges) {
-          const badgeRef = doc(db, "badges", badgeId);
-          const badgeDoc = await getDoc(badgeRef);
-
-          if (badgeDoc.exists()) {
-            const badgeData = badgeDoc.data();
-            result.push(badgeData);
-            console.log(
-              `Badge: ${badgeData.name}, Description: ${badgeData.description}`
-            );
-          }
-        }
-        console.log(result);
-        setBadges(result as any);
+        setUserBadgeIds(badges);
       }
     } catch (error) {
       console.log(error);
@@ -75,7 +69,29 @@ const useBadgeViewModel = () => {
     }
   }
 
-  return { giveBadgeToUser, displayUserBadges, badges, loading };
+  async function fetchBadges() {
+    setLoading(true);
+    try {
+      const badgeRef = collection(db, "badges");
+      const q = query(badgeRef);
+      const querySnapshot = await getDocs(q);
+      const badges = querySnapshot.docs.map((doc) => doc.data());
+      setBadges(badges?.sort((a, b) => a?.pos - b?.pos)?.reverse() as Badge[]);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  return {
+    giveBadgeToUser,
+    userBadgeIds,
+    fetchUserBadges,
+    fetchBadges,
+    badges,
+    loading
+  };
 };
 
 export default useBadgeViewModel;
