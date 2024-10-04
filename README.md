@@ -1,4 +1,4 @@
-# discover-myanmar-project
+# Discover Myanmar Project
 
 A Cultural Journey Through Interactive Technology
 
@@ -78,7 +78,10 @@ yarn start
 
 ### Development and Testing Tools:
 
+- Visual Studio Code: Code editor served as the primary development environment to streamline the coding process.
 - ESLint and Prettier: These tools make sure code style consistency and automated code formatting, making the code easier to read and reducing the chance of errors.
+- Android Emulator and iOS Simulator: During development, these simulated devices enabled testing of the app’s user interface and functionality across various platforms.
+- Expo Go: It allowed the app to be run directly on real devices for testing and debugging, offering an authentic user experience.
 
 ## Task Checklist
 
@@ -108,4 +111,4 @@ Use the checkboxes below to track the completion of tasks.
 - [x] MSD-18 Myanmar Characters Screens
 - [x] MSD-19 Myanmar Numbers Screen
 - [x] MSD-23 Leaderboard Screen
-- [] MSD-24 Achievement / Progress Screens
+- [x] MSD-24 Achievement / Progress Screens
